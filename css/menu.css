@@ -1,0 +1,85 @@
+.description + .menu {
+	margin-bottom: 0.7em;
+}
+.site-header .menu {
+	position: relative;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	font-size: 0.9em;
+	display: inline-block;
+	line-height: 3;
+}
+.site-header .menu a {
+}
+.menu a {
+	color: #fff;
+	padding: 0 1em;
+	display: block;
+	vertical-align: middle;
+}
+.menu a:hover {
+	color: #fff;
+	text-decoration: none;
+	background: var(--primary-color-dark);
+}
+.menu li:hover > a, .menu li a:focus {
+	text-decoration: none;
+	background: var(--primary-color-dark);
+}
+.menu li a.active {
+	color: #fff;
+	text-decoration: none;
+	background: var(--primary-color-dark);
+}
+.menu li ul {
+	z-index: 90;
+	position: absolute;
+	display: none;
+	background: var(--primary-color);
+	margin: 0;
+	padding: 0;
+	border: solid 1px #576563;
+}
+.menu li li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 17em;
+	font-size: 1em;
+}
+.menu li:hover li a, .menu li li a {
+	line-height: 2.75;
+}
+.menu ul a:focus {
+	margin-left: 9990px;
+	border: none;
+	width: 17em;
+}
+.menu ul ul a:focus {
+	margin-left: 9990px;
+	border: none;
+	width: 17em;
+	margin-left: 19950px;
+}
+.menu ul li:hover a:focus, .menu ul li a:focus {
+	margin-left: 0;
+	width: auto;
+}
+.menu li ul ul {
+	margin: -2.75em 0 0 15.3em;
+}
+.menu li:hover ul {
+	display: block;
+}
+.menu li:hover ul ul {
+	left: -9999px;
+}
+.menu li ul ul, .menu li:hover ul ul ul, .menu li ul ul ul {
+	left: -9999px;
+}
+.menu li li:hover ul, .menu li li ul {
+	left: -14px;
+}

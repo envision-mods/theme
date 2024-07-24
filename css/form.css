@@ -1,0 +1,73 @@
+.input-container {
+	display: grid;
+	grid-template-columns: 1fr 3fr auto;
+	gap: 1em 0;
+	margin: 0.5em 0;
+}
+input.valid {
+	background-color: #f5fff0;
+}
+input.invalid {
+	background-color: #fff0f0;
+}
+.input-container input[type=text]:not([class]) {
+	grid-column: 2 / 4;
+}
+textarea, input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 6px 8px;
+}
+.input-container input[class] {
+	border-radius: 5px 0 0 5px;
+}
+.input-container label {
+	pointer-events: none;
+	text-align: right;
+	padding: 0 1em;
+}
+.input-container input ~ span {
+	align-content: center;
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-left: 1px solid #ddd;
+	border-radius: 0 5px 5px 0;
+	font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
+}
+.input-container .checkbox label {
+	padding: 0;
+}
+.input-container .checkbox {
+	grid-column: 2 / 4;
+}
+.form-checkbox input[type='checkbox'] + label:before {
+	color: #ccc;
+	content: "☐";
+	margin-right: 0.5em;
+}
+.form-checkbox input[type='checkbox']:disabled + label:before, .form-checkbox input[type='checkbox']:hover + label:before {
+	color: var(--primary-color);
+}
+.form-checkbox input[type='checkbox']:checked + label:before {
+	color: var(--primary-color);
+	content: "☑";
+}
+.form-checkbox label {
+	cursor: pointer;
+	margin: 0 0.5em;
+}
+fieldset {
+	border: 1px solid #c4c4c4;
+	padding: 1em;
+	margin: 0 0 0.5em 0;
+	border-radius: 10px;
+}
+fieldset legend {
+	font-weight: bold;
+	color: var(--primary-color);
+	font-size: 1.1em;
+	padding: 2px 6px;
+}
