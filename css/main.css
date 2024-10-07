@@ -54,7 +54,7 @@ body {
 	vertical-align: text-bottom;
 }
 #footer {
-	background: radial-gradient(circle at 50% 0%, var(--primary-color), var(var(--primary-color)-dark));
+	background: radial-gradient(circle at 50% 0%, var(--primary-color), var(--primary-color-dark));
 	color: #fff;
 	margin-top: 40px;
 	position: relative;
